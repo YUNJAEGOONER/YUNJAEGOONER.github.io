@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>YUNJAEGOONER</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-12-23T00:42:03+09:00</updated>
+  <updated>2025-12-27T20:33:37+09:00</updated>
   <author>
     <name>your_full_name</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,32 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>소켓 프로그래밍 1</title>
+    <link href="http://localhost:4000/posts/socket-programming/" rel="alternate" type="text/html" title="소켓 프로그래밍 1" />
+    <published>2025-12-23T12:33:00+09:00</published>
+  
+    <updated>2025-12-23T12:33:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/socket-programming/</id>
+    <content type="text/html" src="http://localhost:4000/posts/socket-programming/" />
+    <author>
+      <name>yunjae</name>
+    </author>
+
+  
+    
+    <category term="network" />
+    
+    <category term="socket" />
+    
+  
+
+  <summary>소켓 프로그래밍 개요 및 소켓 프로그래밍의 주요 함수</summary>
+
+  </entry>
 
   
   <entry>
