@@ -2,9 +2,9 @@
 title: 소켓 프로그래밍 1
 description: 소켓 프로그래밍 개요 및 소켓 프로그래밍의 주요 함수
 author: yunjae
-date: 2025-12-23 11:33:00 +0800
-categories: [network, socket]
-tags: [socket programming]
+date: 2025-12-23 11:33:00 +0900
+categories: [network]
+tags: [network, socket programming]
 pin: true
 math: true
 mermaid: true

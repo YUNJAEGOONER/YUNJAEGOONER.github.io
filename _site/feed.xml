@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>YUNJAEGOONER</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-12-27T20:33:37+09:00</updated>
+  <updated>2026-01-10T22:46:37+09:00</updated>
   <author>
     <name>your_full_name</name>
     <uri>http://localhost:4000/</uri>
@@ -13,18 +13,42 @@
   <link rel="alternate" type="text/html" hreflang="en"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
-  <rights> © 2025 your_full_name </rights>
+  <rights> © 2026 your_full_name </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
 
   
   <entry>
+    <title>에라토스테네스의 체 (부제 - 지나고 보니 별거 아니네!)</title>
+    <link href="http://localhost:4000/posts/sieve-of-Eratosthenes/" rel="alternate" type="text/html" title="에라토스테네스의 체 (부제 - 지나고 보니 별거 아니네!)" />
+    <published>2026-01-10T21:10:00+09:00</published>
+  
+    <updated>2026-01-10T21:10:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/sieve-of-Eratosthenes/</id>
+    <content type="text/html" src="http://localhost:4000/posts/sieve-of-Eratosthenes/" />
+    <author>
+      <name>yunjae</name>
+    </author>
+
+  
+    
+    <category term="algorithm" />
+    
+  
+
+  <summary>에라토스테네스의 체의 설명과 관련 문제 풀이 -  백준 1645</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>소켓 프로그래밍 1</title>
     <link href="http://localhost:4000/posts/socket-programming/" rel="alternate" type="text/html" title="소켓 프로그래밍 1" />
-    <published>2025-12-23T12:33:00+09:00</published>
+    <published>2025-12-23T11:33:00+09:00</published>
   
-    <updated>2025-12-23T12:33:00+09:00</updated>
+    <updated>2025-12-23T11:33:00+09:00</updated>
   
     <id>http://localhost:4000/posts/socket-programming/</id>
     <content type="text/html" src="http://localhost:4000/posts/socket-programming/" />
@@ -35,8 +59,6 @@
   
     
     <category term="network" />
-    
-    <category term="socket" />
     
   
 
@@ -119,32 +141,6 @@
   
 
   <summary>This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.  Naming and Path  Create a new file named YYYY-MM-DD-TITLE.EXTENSION and put it in the _posts of the root directory. Please note that the EXTENSION must be one of md and markdown. If you want to save time of cre...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Text and Typography</title>
-    <link href="http://localhost:4000/posts/text-and-typography/" rel="alternate" type="text/html" title="Text and Typography" />
-    <published>2019-08-08T12:33:00+09:00</published>
-  
-    <updated>2019-08-08T12:33:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/text-and-typography/</id>
-    <content type="text/html" src="http://localhost:4000/posts/text-and-typography/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Demo" />
-    
-  
-
-  <summary>Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.</summary>
 
   </entry>
 
