@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>YUNJAEGOONER</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2026-01-10T22:46:37+09:00</updated>
+  <updated>2026-01-11T22:15:44+09:00</updated>
   <author>
     <name>your_full_name</name>
     <uri>http://localhost:4000/</uri>
@@ -38,7 +38,31 @@
     
   
 
-  <summary>에라토스테네스의 체의 설명과 관련 문제 풀이 -  백준 1645</summary>
+  <summary>에라토스테네스의 체의 설명과 관련 문제 풀이 -  백준 1644</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>소켓 프로그래밍 2</title>
+    <link href="http://localhost:4000/posts/socket-programming-2/" rel="alternate" type="text/html" title="소켓 프로그래밍 2" />
+    <published>2025-12-26T16:15:00+09:00</published>
+  
+    <updated>2025-12-26T16:15:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/socket-programming-2/</id>
+    <content type="text/html" src="http://localhost:4000/posts/socket-programming-2/" />
+    <author>
+      <name>yunjae</name>
+    </author>
+
+  
+    
+    <category term="network" />
+    
+  
+
+  <summary>서버 - 클라이언트</summary>
 
   </entry>
 
@@ -48,7 +72,7 @@
     <link href="http://localhost:4000/posts/socket-programming/" rel="alternate" type="text/html" title="소켓 프로그래밍 1" />
     <published>2025-12-23T11:33:00+09:00</published>
   
-    <updated>2025-12-23T11:33:00+09:00</updated>
+    <updated>2026-01-10T22:47:11+09:00</updated>
   
     <id>http://localhost:4000/posts/socket-programming/</id>
     <content type="text/html" src="http://localhost:4000/posts/socket-programming/" />
@@ -115,32 +139,6 @@
   
 
   <summary>Get started with Chirpy basics in this comprehensive overview. You will learn how to install, configure, and use your first Chirpy-based website, as well as deploy it to a web server.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Writing a New Post</title>
-    <link href="http://localhost:4000/posts/write-a-new-post/" rel="alternate" type="text/html" title="Writing a New Post" />
-    <published>2019-08-08T15:10:00+09:00</published>
-  
-    <updated>2019-08-08T15:10:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/write-a-new-post/</id>
-    <content type="text/html" src="http://localhost:4000/posts/write-a-new-post/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
-    
-  
-
-  <summary>This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.  Naming and Path  Create a new file named YYYY-MM-DD-TITLE.EXTENSION and put it in the _posts of the root directory. Please note that the EXTENSION must be one of md and markdown. If you want to save time of cre...</summary>
 
   </entry>
 

@@ -45,7 +45,7 @@
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@Yunjae Lee" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yunjae Lee","url":"https://github.com/YUNJAEGOONER"},"dateModified":"2025-12-23T11:33:00+09:00","datePublished":"2025-12-23T11:33:00+09:00","description":"소켓 프로그래밍 개요 및 소켓 프로그래밍의 주요 함수","headline":"소켓 프로그래밍 1","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/socket-programming/"},"url":"http://localhost:4000/posts/socket-programming/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yunjae Lee","url":"https://github.com/YUNJAEGOONER"},"dateModified":"2026-01-10T22:47:11+09:00","datePublished":"2025-12-23T11:33:00+09:00","description":"소켓 프로그래밍 개요 및 소켓 프로그래밍의 주요 함수","headline":"소켓 프로그래밍 1","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/socket-programming/"},"url":"http://localhost:4000/posts/socket-programming/"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- Fediverse handle/creator -->
@@ -566,6 +566,17 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -628,6 +639,29 @@
 
       <!-- lastmod date -->
       
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1768052831"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Jan 10, 2026
+</time>
+
+        </span>
+      
 
       
 
@@ -673,9 +707,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="721 words"
+  title="1217 words"
 >
-  <em>4 min</em> read</span>
+  <em>6 min</em> read</span>
 
         </div>
       </div>
@@ -708,42 +742,98 @@
 
   <div class="content">
     <h3 id="소켓-프로그래밍"><span class="me-2">소켓 프로그래밍</span><a href="#소켓-프로그래밍" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p>소켓은 7계층에서 4계층의 기능을 활용하기 위한 API이다. 즉, 프로그래밍 언어로 전송 계층의 기능들을 쉽게 이용할 수 있게 해주는 도우미라고 생각하면 된다. 소켓 프로그래밍에서 사용되는 함수에는 어떤 것들이 있는지 살펴보자.</p>
+<p>소켓은 7계층에서 4계층(프로세스 간의 통신)의 기능을 활용하기 위한 API이다. 즉, 프로그래밍 언어로 전송 계층의 기능들을 쉽게 이용할 수 있게 해주는 도우미라고 생각하면 된다. 소켓 프로그래밍에서 사용되는 함수에는 어떤 것들이 있는지 살펴보자.</p>
+
+<h3 id="소켓의-종류"><span class="me-2">소켓의 종류</span><a href="#소켓의-종류" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>소켓은 통신하는 대상이 누구인지에 따라 <code class="language-plaintext highlighter-rouge">AF_UNIX</code>, <code class="language-plaintext highlighter-rouge">AF_INET</code> 통신 방식에 따라 <code class="language-plaintext highlighter-rouge">SOCK_STREAM</code>, <code class="language-plaintext highlighter-rouge">SOCK_DGRAM</code>으로 나눌 수 있다. 즉 4가지 종류의 소켓이 조합될 수 있다.</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">AF_UNIX</code> : 하나의 호스트(시스템)내에서 서로 다른 프로세스간에 통신을 하는 경우로 하나의 호스트내에서 유일하게 존재하는 ‘경로명’를 주소로 활용한다.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">AF_INET</code> : 서로 떨어져 있는 호스트의 프로세스간에 통신을 하는 경우로 다른 호스트의 IP주소와 포트번호를 주소로 활용한다.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">SOCK_STREAM</code> : TCP를 사용하는 경우 (연결 수립을 통한 신뢰성 보장)</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">SOCK_DGRAM</code> : UDP를 사용하는 경우</p>
+  </li>
+</ul>
+
+<div class="language-c highlighter-rouge"><div class="code-header">
+        <span data-label-text="C"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="kt">int</span> <span class="n">sd</span> <span class="o">=</span> <span class="n">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">SOCK_STREAM</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span> 
+<span class="c1">// 다른 호스트의 프로세스와 TCP 방식으로 통신</span>
+</pre></td></tr></tbody></table></code></div></div>
 
 <h3 id="소켓-함수"><span class="me-2">소켓 함수</span><a href="#소켓-함수" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <div class="language-c highlighter-rouge"><div class="code-header">
         <span data-label-text="C"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="n">socket</span><span class="p">();</span>
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="n">socket</span><span class="p">(</span><span class="kt">int</span> <span class="n">domain</span><span class="p">,</span> <span class="kt">int</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">protocol</span><span class="p">);</span>
+
+<span class="c1">// domain : AF_UNIX, AF_INET</span>
+<span class="c1">// type   : SOCK_STREAM, SOCK_DGRAM</span>
 </pre></td></tr></tbody></table></code></div></div>
 <p>소켓을 생성하는 함수로 정수형의 socket descriptor를 반환한다. socket descriptor는 통신을 위해 사용된다.</p>
 
 <div class="language-c highlighter-rouge"><div class="code-header">
         <span data-label-text="C"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="n">bind</span><span class="p">();</span>
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="n">bind</span><span class="p">(</span><span class="kt">int</span> <span class="n">sd</span><span class="p">,</span> <span class="k">const</span> <span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span> <span class="n">name</span><span class="p">,</span> <span class="n">socklen_t</span> <span class="n">namelen</span><span class="p">);</span>
+
+<span class="c1">// sd : socket descriptor</span>
+
+<span class="c1">// * name : 주소 정보가 들어 있는 구조체 </span>
+<span class="c1">// sockaddr : sockaddr_un와 sockaddr_in을 sockaddr 타입으로 강제 형변환</span>
 </pre></td></tr></tbody></table></code></div></div>
 <p>socket() 함수를 통해 생성된 socket descriptor에 주소를 부여해 준다. 즉, 소켓 기술자에 주소를 매핑해 주기 위해 사용된다.</p>
 
 <div class="language-c highlighter-rouge"><div class="code-header">
         <span data-label-text="C"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="n">listen</span><span class="p">();</span>
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="n">listen</span><span class="p">(</span><span class="kt">int</span> <span class="n">sd</span><span class="p">,</span> <span class="kt">int</span> <span class="n">backlog</span><span class="p">);</span>
+
+<span class="c1">// backlog : 소켓에서 대기할 수 있는 클라이언트의 연결 요청 개수 (5로 설정하는것이 일반적)</span>
 </pre></td></tr></tbody></table></code></div></div>
-<p>소켓을 활성화하는 함수이다. 클라이언트의 접속을 받을 상태가 되는 것으로 연결형 서비스에서만 사용한다.</p>
+<p>소켓을 활성화하는 함수이다. 클라이언트의 접속을 받을 상태가 되는 것으로 연결형 서비스에서만 사용한다. (accpet를 호출한 준비가 되어 있음…)</p>
 
 <div class="language-c highlighter-rouge"><div class="code-header">
         <span data-label-text="C"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="n">accept</span><span class="p">();</span>
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="n">accept</span><span class="p">(</span><span class="kt">int</span> <span class="n">sd</span><span class="p">,</span> <span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span> <span class="n">addr</span> <span class="n">socklen_t</span> <span class="o">*</span> <span class="n">addlen</span><span class="p">);</span>
+
+<span class="c1">// addr : 연결을 요청한 클라이언트의 소켓 주소가 (운영체제에 의해?)자동으로 입력된다.</span>
+<span class="c1">// 기본적으로 Blocking 방식으로 동작하는 accept함수를 누가 깨웠는지에 대한 정보가 자동으로 입력된다.</span>
 </pre></td></tr></tbody></table></code></div></div>
 <p>클라이언트의 connect 요청을 받기 위한 함수로, 특정 클라이언트와 1 : 1 통신을 위한 전용의 소켓 기술자가 반환된다.</p>
 
 <div class="language-c highlighter-rouge"><div class="code-header">
         <span data-label-text="C"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="n">connect</span><span class="p">();</span>
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="n">connect</span><span class="p">(</span><span class="kt">int</span> <span class="n">sd</span><span class="p">,</span> <span class="k">const</span> <span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span> <span class="n">name</span><span class="p">,</span> <span class="n">socklen_t</span> <span class="n">namelen</span><span class="p">);</span>
+
+<span class="c1">//name : 어느 서버로 접속할지에 대한 정보 (연결을 요청할 서버의 정보)</span>
 </pre></td></tr></tbody></table></code></div></div>
 <p>클라이언트 프로세스가 서버 프로세스에 연결 요청을 할 때 사용하는 함수이다. 클라이언트는 통신을 위해서 서버에 대한 정보를 알고 있어야 한다.</p>
 
@@ -905,6 +995,13 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/socket-programming/">소켓 프로그래밍 1</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/sieve-of-Eratosthenes/">에라토스테네스의 체 (부제 - 지나고 보니 별거 아니네!)</a>
         </li>
       
@@ -912,7 +1009,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/socket-programming/">소켓 프로그래밍 1</a>
+          <a href="/posts/socket-programming-2/">소켓 프로그래밍 2</a>
         </li>
       
         
@@ -927,13 +1024,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/posts/getting-started/">Getting Started</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/write-a-new-post/">Writing a New Post</a>
         </li>
       
     </ul>
@@ -962,6 +1052,61 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
       
         
         
@@ -1031,37 +1176,10 @@
     
     
     
-      
-        
-        
-
   
     
     
     
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1098,58 +1216,10 @@
     
     
     
-      
-    
   
     
     
     
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1174,6 +1244,12 @@
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/network/">network</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/socket-programming/">socket programming</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/algorithm/">algorithm</a>
       
         
@@ -1181,12 +1257,6 @@
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/getting-started/">getting started</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/network/">network</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/socket-programming/">socket programming</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
@@ -1253,6 +1323,17 @@
 
   
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
 
@@ -1262,6 +1343,43 @@
 
 
 
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/socket-programming-2/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1766733300"
+  data-df="ll"
+  
+>
+  Dec 26, 2025
+</time>
+
+              <h4 class="pt-0 my-2">소켓 프로그래밍 2</h4>
+              <div class="text-muted">
+                <p>서버 - 클라이언트</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
 
 
             
@@ -1284,11 +1402,11 @@
 
   
     <a
-      href="/posts/sieve-of-Eratosthenes/"
+      href="/posts/socket-programming-2/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>에라토스테네스의 체 (부제 - 지나고 보니 별거 아니네!)</p>
+      <p>소켓 프로그래밍 2</p>
     </a>
   
 </nav>
@@ -1360,6 +1478,61 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
       
         
         
@@ -1429,37 +1602,10 @@
     
     
     
-      
-        
-        
-
   
     
     
     
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1496,58 +1642,10 @@
     
     
     
-      
-    
   
     
     
     
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1572,6 +1670,12 @@
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/network/">network</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/socket-programming/">socket programming</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/algorithm/">algorithm</a>
       
         
@@ -1579,12 +1683,6 @@
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/getting-started/">getting started</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/network/">network</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/socket-programming/">socket programming</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
