@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>YUNJAEGOONER</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2026-01-11T22:15:44+09:00</updated>
+  <updated>2026-01-17T23:19:02+09:00</updated>
   <author>
     <name>your_full_name</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/sieve-of-Eratosthenes/" rel="alternate" type="text/html" title="에라토스테네스의 체 (부제 - 지나고 보니 별거 아니네!)" />
     <published>2026-01-10T21:10:00+09:00</published>
   
-    <updated>2026-01-10T21:10:00+09:00</updated>
+    <updated>2026-01-11T22:17:20+09:00</updated>
   
     <id>http://localhost:4000/posts/sieve-of-Eratosthenes/</id>
     <content type="text/html" src="http://localhost:4000/posts/sieve-of-Eratosthenes/" />
@@ -72,7 +72,7 @@
     <link href="http://localhost:4000/posts/socket-programming/" rel="alternate" type="text/html" title="소켓 프로그래밍 1" />
     <published>2025-12-23T11:33:00+09:00</published>
   
-    <updated>2026-01-10T22:47:11+09:00</updated>
+    <updated>2026-01-11T22:17:20+09:00</updated>
   
     <id>http://localhost:4000/posts/socket-programming/</id>
     <content type="text/html" src="http://localhost:4000/posts/socket-programming/" />
@@ -87,6 +87,30 @@
   
 
   <summary>소켓 프로그래밍 개요 및 소켓 프로그래밍의 주요 함수</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>NULL이라는데 이걸 세야 해? 말아야 해?</title>
+    <link href="http://localhost:4000/posts/sql-count-function/" rel="alternate" type="text/html" title="NULL이라는데 이걸 세야 해? 말아야 해?" />
+    <published>2024-10-01T21:10:00+09:00</published>
+  
+    <updated>2024-10-01T21:10:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/sql-count-function/</id>
+    <content type="text/html" src="http://localhost:4000/posts/sql-count-function/" />
+    <author>
+      <name>yunjae</name>
+    </author>
+
+  
+    
+    <category term="db" />
+    
+  
+
+  <summary>집계함수 COUNT  COUNT는 집계함수 중 하나로, 컬럼명을 통해 행의 개수 셀 때 활용된다. COUNT와 관련된 재미있는 사실을 발견했다. 모든 컬럼을 포함하기 위한 *를 사용하는 경우와 특정 컬럼을 직접 지정하는 경우, 집계 방법이 달라진다는 것이다.                 함수       설명                       COUNT(*)       테이블의 모든 행의 수를 계산한다. NULL 값을 갖는 행도 포함한다.                 COUNT(컬럼명)       특정 컬럼에서 NULL이 아닌 행의 수를 계산합니다. NULL 값은 제외된다.           예시   count(*)    NULL 값을 갖는 행도 포함하여 테이블에 존재하는 모든 행의 수를 계산한다....</summary>
 
   </entry>
 
@@ -113,32 +137,6 @@
   
 
   <summary>The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.  Generate the favicon  Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool Real Favicon Generator and click the button Pick your favicon image to...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Getting Started</title>
-    <link href="http://localhost:4000/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
-    <published>2019-08-09T21:55:00+09:00</published>
-  
-    <updated>2019-08-09T21:55:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/getting-started/</id>
-    <content type="text/html" src="http://localhost:4000/posts/getting-started/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
-    
-  
-
-  <summary>Get started with Chirpy basics in this comprehensive overview. You will learn how to install, configure, and use your first Chirpy-based website, as well as deploy it to a web server.</summary>
 
   </entry>
 
