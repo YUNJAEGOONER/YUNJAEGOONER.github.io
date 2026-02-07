@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>YUNJAEGOONER</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2026-01-17T23:19:02+09:00</updated>
+  <updated>2026-02-07T23:09:41+09:00</updated>
   <author>
     <name>your_full_name</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,30 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>무작정 따라해보는 배포1</title>
+    <link href="http://localhost:4000/posts/deployment/" rel="alternate" type="text/html" title="무작정 따라해보는 배포1" />
+    <published>2026-02-07T21:30:00+09:00</published>
+  
+    <updated>2026-02-07T21:30:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/deployment/</id>
+    <content type="text/html" src="http://localhost:4000/posts/deployment/" />
+    <author>
+      <name>yunjae</name>
+    </author>
+
+  
+    
+    <category term="deployment" />
+    
+  
+
+  <summary>무장정 따라해본 배포, 배포 스크립트를 활용한 배포</summary>
+
+  </entry>
 
   
   <entry>
@@ -111,32 +135,6 @@
   
 
   <summary>집계함수 COUNT  COUNT는 집계함수 중 하나로, 컬럼명을 통해 행의 개수 셀 때 활용된다. COUNT와 관련된 재미있는 사실을 발견했다. 모든 컬럼을 포함하기 위한 *를 사용하는 경우와 특정 컬럼을 직접 지정하는 경우, 집계 방법이 달라진다는 것이다.                 함수       설명                       COUNT(*)       테이블의 모든 행의 수를 계산한다. NULL 값을 갖는 행도 포함한다.                 COUNT(컬럼명)       특정 컬럼에서 NULL이 아닌 행의 수를 계산합니다. NULL 값은 제외된다.           예시   count(*)    NULL 값을 갖는 행도 포함하여 테이블에 존재하는 모든 행의 수를 계산한다....</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Customize the Favicon</title>
-    <link href="http://localhost:4000/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
-    <published>2019-08-11T01:34:00+09:00</published>
-  
-    <updated>2019-08-11T01:34:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/customize-the-favicon/</id>
-    <content type="text/html" src="http://localhost:4000/posts/customize-the-favicon/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
-    
-  
-
-  <summary>The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.  Generate the favicon  Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool Real Favicon Generator and click the button Pick your favicon image to...</summary>
 
   </entry>
 
