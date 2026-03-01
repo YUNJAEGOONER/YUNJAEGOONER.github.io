@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>YUNJAEGOONER</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2026-02-07T23:09:41+09:00</updated>
+  <updated>2026-02-28T18:04:22+09:00</updated>
   <author>
     <name>your_full_name</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,83 @@
 
   
   <entry>
-    <title>무작정 따라해보는 배포1</title>
-    <link href="http://localhost:4000/posts/deployment/" rel="alternate" type="text/html" title="무작정 따라해보는 배포1" />
+    <title>무작정 따라 해보는 배포 5</title>
+    <link href="http://localhost:4000/posts/%EB%AC%B4%EC%A4%91%EB%8B%A8-%EB%B0%B0%ED%8F%AC/" rel="alternate" type="text/html" title="무작정 따라 해보는 배포 5" />
+    <published>2026-02-26T22:35:00+09:00</published>
+  
+    <updated>2026-02-26T22:35:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%EB%AC%B4%EC%A4%91%EB%8B%A8-%EB%B0%B0%ED%8F%AC/</id>
+    <content type="text/html" src="http://localhost:4000/posts/%EB%AC%B4%EC%A4%91%EB%8B%A8-%EB%B0%B0%ED%8F%AC/" />
+    <author>
+      <name>yunjae</name>
+    </author>
+
+  
+    
+    <category term="deployment" />
+    
+  
+
+  <summary>무작정 따라 해본 배포 - 무중단 배포</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>무작정 따라 해보는 배포 3</title>
+    <link href="http://localhost:4000/posts/CI-CD/" rel="alternate" type="text/html" title="무작정 따라 해보는 배포 3" />
+    <published>2026-02-22T23:58:00+09:00</published>
+  
+    <updated>2026-02-23T00:17:42+09:00</updated>
+  
+    <id>http://localhost:4000/posts/CI-CD/</id>
+    <content type="text/html" src="http://localhost:4000/posts/CI-CD/" />
+    <author>
+      <name>yunjae</name>
+    </author>
+
+  
+    
+    <category term="deployment" />
+    
+  
+
+  <summary>무작정 따라 해본 배포, 근데 CI/CD를 곁들인 근데 Github Actions도 함께 곁들인</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>무작정 따라 해보는 배포 2</title>
+    <link href="http://localhost:4000/posts/deployment-revers-proxy/" rel="alternate" type="text/html" title="무작정 따라 해보는 배포 2" />
+    <published>2026-02-10T22:13:00+09:00</published>
+  
+    <updated>2026-02-10T22:13:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/deployment-revers-proxy/</id>
+    <content type="text/html" src="http://localhost:4000/posts/deployment-revers-proxy/" />
+    <author>
+      <name>yunjae</name>
+    </author>
+
+  
+    
+    <category term="deployment" />
+    
+  
+
+  <summary>무작정 따라 해본 배포, NGNIX 그래서 그게 뭔데?</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>무작정 따라 해보는 배포 1</title>
+    <link href="http://localhost:4000/posts/deployment/" rel="alternate" type="text/html" title="무작정 따라 해보는 배포 1" />
     <published>2026-02-07T21:30:00+09:00</published>
   
-    <updated>2026-02-07T21:30:00+09:00</updated>
+    <updated>2026-02-23T00:16:47+09:00</updated>
   
     <id>http://localhost:4000/posts/deployment/</id>
     <content type="text/html" src="http://localhost:4000/posts/deployment/" />
@@ -38,7 +110,7 @@
     
   
 
-  <summary>무장정 따라해본 배포, 배포 스크립트를 활용한 배포</summary>
+  <summary>무작정 따라 해본 배포, 근데 배포 스크립트를 곁들인</summary>
 
   </entry>
 
@@ -63,78 +135,6 @@
   
 
   <summary>에라토스테네스의 체의 설명과 관련 문제 풀이 -  백준 1644</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>소켓 프로그래밍 2</title>
-    <link href="http://localhost:4000/posts/socket-programming-2/" rel="alternate" type="text/html" title="소켓 프로그래밍 2" />
-    <published>2025-12-26T16:15:00+09:00</published>
-  
-    <updated>2025-12-26T16:15:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/socket-programming-2/</id>
-    <content type="text/html" src="http://localhost:4000/posts/socket-programming-2/" />
-    <author>
-      <name>yunjae</name>
-    </author>
-
-  
-    
-    <category term="network" />
-    
-  
-
-  <summary>서버 - 클라이언트</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>소켓 프로그래밍 1</title>
-    <link href="http://localhost:4000/posts/socket-programming/" rel="alternate" type="text/html" title="소켓 프로그래밍 1" />
-    <published>2025-12-23T11:33:00+09:00</published>
-  
-    <updated>2026-01-11T22:17:20+09:00</updated>
-  
-    <id>http://localhost:4000/posts/socket-programming/</id>
-    <content type="text/html" src="http://localhost:4000/posts/socket-programming/" />
-    <author>
-      <name>yunjae</name>
-    </author>
-
-  
-    
-    <category term="network" />
-    
-  
-
-  <summary>소켓 프로그래밍 개요 및 소켓 프로그래밍의 주요 함수</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>NULL이라는데 이걸 세야 해? 말아야 해?</title>
-    <link href="http://localhost:4000/posts/sql-count-function/" rel="alternate" type="text/html" title="NULL이라는데 이걸 세야 해? 말아야 해?" />
-    <published>2024-10-01T21:10:00+09:00</published>
-  
-    <updated>2024-10-01T21:10:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/sql-count-function/</id>
-    <content type="text/html" src="http://localhost:4000/posts/sql-count-function/" />
-    <author>
-      <name>yunjae</name>
-    </author>
-
-  
-    
-    <category term="db" />
-    
-  
-
-  <summary>집계함수 COUNT  COUNT는 집계함수 중 하나로, 컬럼명을 통해 행의 개수 셀 때 활용된다. COUNT와 관련된 재미있는 사실을 발견했다. 모든 컬럼을 포함하기 위한 *를 사용하는 경우와 특정 컬럼을 직접 지정하는 경우, 집계 방법이 달라진다는 것이다.                 함수       설명                       COUNT(*)       테이블의 모든 행의 수를 계산한다. NULL 값을 갖는 행도 포함한다.                 COUNT(컬럼명)       특정 컬럼에서 NULL이 아닌 행의 수를 계산합니다. NULL 값은 제외된다.           예시   count(*)    NULL 값을 갖는 행도 포함하여 테이블에 존재하는 모든 행의 수를 계산한다....</summary>
 
   </entry>
 
