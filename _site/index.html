@@ -38,6 +38,7 @@
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="YUNJAEGOONER" />
 <meta property="og:type" content="website" />
+<link rel="next" href="http://localhost:4000/page2" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="YUNJAEGOONER" />
 <script type="application/ld+json">
@@ -490,6 +491,126 @@
 
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
+  
+    <article class="card-wrapper card">
+      <a href="/posts/cors-study-1/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">CORS에 대한 사실과 오해</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>사실 아무도 오해한 적 없다. 지금 진행하는 프로젝트에서 CORS 설정을 해야 하는 일이 있어 겸사겸사 정리해 본다.  도메인만 동일하면 같은 출처(Same Origin)이다.    아니다.   Protocol, Host, Port를 통해서 동일한 출처(Same Origin)인지 아닌지를 판단한다.   즉, 3가지(https://, yunjaejjan...</p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1780817400"
+  data-df="ll"
+  
+>
+  Jun  7, 2026
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      web
+                  </span>
+                
+              </div>
+
+              
+                <div class="pin ms-1">
+                  <i class="fas fa-thumbtack fa-fw"></i>
+                  <span></span>
+                </div>
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  
+    <article class="card-wrapper card">
+      <a href="/posts/call-by-reference/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">자바는 항상 Call by value이다....!!!</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>이게 Call by value임? 아니 잠깐만....Call by reference 아님??</p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1777359000"
+  data-df="ll"
+  
+>
+  Apr 28, 2026
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      java
+                  </span>
+                
+              </div>
+
+              
+                <div class="pin ms-1">
+                  <i class="fas fa-thumbtack fa-fw"></i>
+                  <span></span>
+                </div>
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
   
     <article class="card-wrapper card">
       <a href="/posts/%EB%AC%B4%EC%A4%91%EB%8B%A8-%EB%B0%B0%ED%8F%AC/" class="post-preview row g-0 flex-md-row-reverse">
@@ -961,63 +1082,82 @@
       </a>
     </article>
   
-    <article class="card-wrapper card">
-      <a href="/posts/%ED%81%90%EC%99%80%EC%8A%A4%ED%83%9D/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">큐와 스택</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>큐와 스택</p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1640516400"
-  data-df="ll"
-  
->
-  Dec 26, 2021
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Data structure
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
 </div>
 <!-- #post-list -->
+
+
+  <!-- The paginator for post list on HomgPage. -->
+
+<nav aria-label="Page Navigation">
+  <ul class="pagination align-items-center mt-4 mb-0">
+    <!-- left arrow -->
+    
+
+    <li class="page-item disabled">
+      <a class="page-link" href="#" aria-label="previous-page">
+        <i class="fas fa-angle-left"></i>
+      </a>
+    </li>
+
+    <!-- page numbers -->
+    
+    
+
+    
+      
+      
+      
+      
+      
+
+      
+
+      
+        <!-- show number -->
+        <li class="page-item  active">
+          <a
+            class="page-link"
+            href="/"
+          >1</a>
+        </li>
+      
+    
+      
+      
+      
+      
+      
+
+      
+
+      
+        <!-- show number -->
+        <li class="page-item ">
+          <a
+            class="page-link"
+            href="/page2"
+          >2</a>
+        </li>
+      
+    
+
+    <!-- mobile pagination -->
+    <li class="page-index align-middle">
+      <span>1</span>
+      <span class="text-muted">/ 2</span>
+    </li>
+
+    <!-- right arrow -->
+    
+
+    <li class="page-item ">
+      <a class="page-link" href="/page2" aria-label="next-page">
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </li>
+  </ul>
+</nav>
+<!-- .pagination -->
 
 
 
@@ -1051,7 +1191,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/CI-CD/">무작정 따라 해보는 배포 3</a>
+          <a href="/posts/cors-study-1/">CORS에 대한 사실과 오해</a>
         </li>
       
         
@@ -1065,13 +1205,6 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/deployment/">무작정 따라 해보는 배포 1</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
           <a href="/posts/deployment-revers-proxy/">무작정 따라 해보는 배포 2</a>
         </li>
       
@@ -1079,7 +1212,14 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/socket-programming/">소켓 프로그래밍 1</a>
+          <a href="/posts/CI-CD/">무작정 따라 해보는 배포 3</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/call-by-reference/">자바는 항상 Call by value이다....!!!</a>
         </li>
       
     </ul>
@@ -1127,7 +1267,44 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1178,35 +1355,6 @@
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -1322,6 +1470,53 @@
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
   
     
     
@@ -1361,6 +1556,13 @@
     
     
     
+    
+  
+    
+    
+    
+    
+      
     
   
     
@@ -1414,6 +1616,9 @@
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/db/">db</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/java/">java</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/queue/">Queue</a>
@@ -1520,7 +1725,44 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1571,35 +1813,6 @@
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -1715,6 +1928,53 @@
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
   
     
     
@@ -1754,6 +2014,13 @@
     
     
     
+    
+  
+    
+    
+    
+    
+      
     
   
     
@@ -1807,6 +2074,9 @@
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/db/">db</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/java/">java</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/queue/">Queue</a>

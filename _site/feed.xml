@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>YUNJAEGOONER</title>
   <subtitle>My name is YUNJAE. I am Fency Developer!</subtitle>
-  <updated>2026-04-12T17:02:10+09:00</updated>
+  <updated>2026-06-07T17:21:27+09:00</updated>
   <author>
     <name>lee yunjae</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,59 @@
 
   
   <entry>
+    <title>CORS에 대한 사실과 오해</title>
+    <link href="http://localhost:4000/posts/cors-study-1/" rel="alternate" type="text/html" title="CORS에 대한 사실과 오해" />
+    <published>2026-06-07T16:30:00+09:00</published>
+  
+    <updated>2026-06-07T16:30:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/cors-study-1/</id>
+    <content type="text/html" src="http://localhost:4000/posts/cors-study-1/" />
+    <author>
+      <name>yunjae</name>
+    </author>
+
+  
+    
+    <category term="web" />
+    
+  
+
+  <summary>사실 아무도 오해한 적 없다. 지금 진행하는 프로젝트에서 CORS 설정을 해야 하는 일이 있어 겸사겸사 정리해 본다.  도메인만 동일하면 같은 출처(Same Origin)이다.    아니다.   Protocol, Host, Port를 통해서 동일한 출처(Same Origin)인지 아닌지를 판단한다.   즉, 3가지(https://, yunjaejjang.com, :443) 모두 동일해야지 동일 출처이다.   출처가 다른 경우에는 항상 preflight 요청을 보낸다.    아니다.        cors를 조금이라도 공부해 본 사람이라면 preflight 보내고 실제 요청(내가 진짜 보내려고 하는 요청)을 보낸다고 어렴풋이 기억하고 있을 수 있다. 하지만 항상 preflight 요청을 보내는 것은 아니다...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>자바는 항상 Call by value이다....!!!</title>
+    <link href="http://localhost:4000/posts/call-by-reference/" rel="alternate" type="text/html" title="자바는 항상 Call by value이다....!!!" />
+    <published>2026-04-28T15:50:00+09:00</published>
+  
+    <updated>2026-04-28T15:50:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/call-by-reference/</id>
+    <content type="text/html" src="http://localhost:4000/posts/call-by-reference/" />
+    <author>
+      <name>yunjae</name>
+    </author>
+
+  
+    
+    <category term="java" />
+    
+  
+
+  <summary>이게 Call by value임? 아니 잠깐만....Call by reference 아님??</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>무작정 따라 해보는 배포 4</title>
     <link href="http://localhost:4000/posts/%EB%AC%B4%EC%A4%91%EB%8B%A8-%EB%B0%B0%ED%8F%AC/" rel="alternate" type="text/html" title="무작정 따라 해보는 배포 4" />
     <published>2026-02-26T22:35:00+09:00</published>
   
-    <updated>2026-02-26T22:35:00+09:00</updated>
+    <updated>2026-05-29T02:14:11+09:00</updated>
   
     <id>http://localhost:4000/posts/%EB%AC%B4%EC%A4%91%EB%8B%A8-%EB%B0%B0%ED%8F%AC/</id>
     <content type="text/html" src="http://localhost:4000/posts/%EB%AC%B4%EC%A4%91%EB%8B%A8-%EB%B0%B0%ED%8F%AC/" />
@@ -48,7 +96,7 @@
     <link href="http://localhost:4000/posts/CI-CD/" rel="alternate" type="text/html" title="무작정 따라 해보는 배포 3" />
     <published>2026-02-22T23:58:00+09:00</published>
   
-    <updated>2026-03-01T16:54:30+09:00</updated>
+    <updated>2026-04-29T00:41:20+09:00</updated>
   
     <id>http://localhost:4000/posts/CI-CD/</id>
     <content type="text/html" src="http://localhost:4000/posts/CI-CD/" />
@@ -72,7 +120,7 @@
     <link href="http://localhost:4000/posts/deployment-revers-proxy/" rel="alternate" type="text/html" title="무작정 따라 해보는 배포 2" />
     <published>2026-02-10T22:13:00+09:00</published>
   
-    <updated>2026-02-10T22:13:00+09:00</updated>
+    <updated>2026-04-29T00:41:20+09:00</updated>
   
     <id>http://localhost:4000/posts/deployment-revers-proxy/</id>
     <content type="text/html" src="http://localhost:4000/posts/deployment-revers-proxy/" />
@@ -87,54 +135,6 @@
   
 
   <summary>무작정 따라 해본 배포, NGINX 그래서 그게 뭔데?</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>무작정 따라 해보는 배포 1</title>
-    <link href="http://localhost:4000/posts/deployment/" rel="alternate" type="text/html" title="무작정 따라 해보는 배포 1" />
-    <published>2026-02-07T21:30:00+09:00</published>
-  
-    <updated>2026-02-23T00:16:47+09:00</updated>
-  
-    <id>http://localhost:4000/posts/deployment/</id>
-    <content type="text/html" src="http://localhost:4000/posts/deployment/" />
-    <author>
-      <name>yunjae</name>
-    </author>
-
-  
-    
-    <category term="deployment" />
-    
-  
-
-  <summary>무작정 따라 해본 배포, 근데 배포 스크립트를 곁들인</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>에라토스테네스의 체 (부제 - 지나고 보니 별거 아니네!)</title>
-    <link href="http://localhost:4000/posts/sieve-of-Eratosthenes/" rel="alternate" type="text/html" title="에라토스테네스의 체 (부제 - 지나고 보니 별거 아니네!)" />
-    <published>2026-01-10T21:10:00+09:00</published>
-  
-    <updated>2026-01-11T22:17:20+09:00</updated>
-  
-    <id>http://localhost:4000/posts/sieve-of-Eratosthenes/</id>
-    <content type="text/html" src="http://localhost:4000/posts/sieve-of-Eratosthenes/" />
-    <author>
-      <name>yunjae</name>
-    </author>
-
-  
-    
-    <category term="algorithm" />
-    
-  
-
-  <summary>에라토스테네스의 체의 설명과 관련 문제 풀이 -  백준 1644</summary>
 
   </entry>
 
